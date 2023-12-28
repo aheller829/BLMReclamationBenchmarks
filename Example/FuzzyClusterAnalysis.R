@@ -7,14 +7,11 @@ library(tidyverse)
 library(NbClust)
 library(RColorBrewer)
 
-# Setwd
-setwd("C:\\Users\\aheller\\Documents\\Analysis\\BLMReclamationBenchmarks")
-
 # Read in monitoring data tables
 l3.indicators <- read.csv("Example\\l3.24.indicators.csv")
 l3.plots <- read.csv("Example\\l3.24.plots.csv")
 
-set.seed(2)
+set.seed(1)
 
 # Define analysis table and add environmental variables to indicators
 analysis.table <- l3.indicators
@@ -62,12 +59,8 @@ plot(fit, p.max = 0.05, col = "blue")
 # Start by finding optimal number of clusters indicated by cluster metrics (k)
 
 # Test cluster number metrics
-fg.KM.cascade <- vegan::cascadeKM(fg.foliar.dist, inf.gr = 2, sup.gr = 12, iter = 100, criterion = "ssi")
+fg.KM.cascade <- vegan::cascadeKM(fg.foliar.dist, inf.gr = 2, sup.gr = 15, iter = 100, criterion = "ssi")
 plot(fg.KM.cascade, sortg = TRUE)
-
-# NbClust(fg.foliar, diss = fg.foliar.dist, distance = NULL, min.nc = 3, max.nc = 20, method = "kmeans", index = "all")
-# par(mfrow = c(1, 1))
-
 
 # Adjust fuzziness/crispness with membership exponent approaching 2 for fuzzier classification
 veg.fanny <- cluster::fanny(fg.foliar.dist, k = 11, memb.exp = 1.1, maxit = 1000, keep.diss = TRUE)
