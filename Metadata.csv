@@ -1,0 +1,14 @@
+Attribute,Definition
+US_L3CO,EPA Level III ecoregion numeric code
+Ecoregn,EPA Level III ecoregion numeric code and name combined
+Cluster,Ecoregion code and cluster number used for setting benchmarks
+NoxsCvr,Foliar cover (%) of noxious plant species from line-point intercept (any hit)
+InvsvCv,Foliar cover (%) of invasive plant species from line-point intercept (any hit)
+NtvWdyC,Foliar cover (%) of native woody plant species from line-point intercept (any hit)
+NtvHrbC,Foliar cover (%) of native herbaceous plant species from line-point intercept (any hit)
+AnnlPlC,Foliar cover (%) of annual plant species from line-point intercept (any hit)
+PrnnlPC,Foliar cover (%) of perennial plant species from line-point intercept (any hit)
+BrSlCvr,Bare soil cover (%) from line-point intercept (any hit)
+LrgCnpG,Proportion of the plot in large (> 100 cm) canopy gaps (%) from the canopy gap method
+MnMxHgh,"Mean plant height  from line-point intercept (cm) after Okin, 2008"
+TtlFlrC,Total foliar cover (%) from line-point intercept (any hit)
