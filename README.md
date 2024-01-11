@@ -6,4 +6,3 @@ This repository contains a shapefile with benchmark values by ecoregion ("Benchm
 
 There is also a folder ("Example") that contains code for fuzzy cluster analysis of an example ecoregion (Ecoregion 24). The formatted monitoring data tables for Ecoregion 24 are included for use in the fuzzy cluster analysis example. 
 
-Test
